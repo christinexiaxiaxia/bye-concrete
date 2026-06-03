@@ -20,6 +20,20 @@ $('.letter').hover(
 
 
 
+// ENTER THE SITE
+$('.confirm').click(
+	function(){
+		$('.warning').css({'display':'none'})
+		$('.enter').css({'display':'block'})
+		$('body').css({'background-color':'red'})
+		$('.bye-concrete').css({'display':'block'})
+		$(document).prop('title', 'Bye Concrete')
+		$("link[rel='icon']").attr('href','bye.png')
+	}
+)
+
+
+
 
 // HOVER IMAGE following mouse
 

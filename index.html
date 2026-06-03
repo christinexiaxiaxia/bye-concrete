@@ -3,15 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bye Concrete</title>
+	<title>Confirm?</title>
 
-	<link rel="icon" href="favicon.png">
+	<link rel="icon" href="confirm.webp">
 
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 	<div class="column">
-		<table class="table">
+
+		<table class="table warning">
+			<tr>
+				<th class="small">
+					Please confirm there is no one behind you that shouldn’t see this and that your sound is on (with headphones, if you’re in the office)
+				<br>
+				<br>
+				<span class="confirm" onclick="document.getElementById('entersite').play()">Yes, I confirm</span>
+				</th>
+			</tr>
+		</table>
+		<table class="table enter">
 
 			<tr class="cell">
 				<th class="large">
@@ -21,7 +32,7 @@
 
 			<tr class="cell">
 				<th class="large">
-					This site is a formal announcement that will be resigning from my role as Senior Designer at <span class="concrete">Concrete</span>.
+					This site is a formal announcement that I will be resigning from my role as Senior Designer at <span class="concrete">Concrete</span>.
 				</th>
 			</tr>
 
@@ -33,7 +44,7 @@
 
 			<tr class="cell">
 				<th class="large">
-					Thank you for
+					Thank you for everything, truly.
 				</th>
 			</tr>
 
@@ -62,8 +73,16 @@
 		<p class="small">And <a href="XiaChristine_Resignation.pdf" target="_blank">here</a> is a downloadable (more serious) version for official records.</p>
 	</div> -->
 
-	<div class="hovbox bye-concrete"><p class="hovtext">Bye<br>Concrete</p></div>
-	<div class="hovbox download"><p class="hovtext">Download</p></div>
+	<div class="hovbox bye-concrete">
+		<p class="hovtext">Bye<br>Concrete</p>
+	</div>
+	<div class="hovbox download">
+		<p class="hovtext light">Download</p>
+	</div>
+
+					<audio controls id="entersite">
+						<source src="funeral.mp3" type="audio/mpeg">
+					</audio>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="main.js"></script>

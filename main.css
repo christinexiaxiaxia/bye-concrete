@@ -8,11 +8,26 @@
 	src: url("Antique-Legacy-Medium.woff");
 }
 
+::selection {
+    background: black;
+    color: white;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: black;
+    color: white;
+    text-shadow: none;
+}
+
 * {
 	font-family: Sorny;
 	font-size: 60px;
-	line-height: 1rem;
 	text-align: center;
+}
+
+body {
+	background-color: white;
 }
 
 .column {
@@ -43,12 +58,30 @@ tr {
 	width: calc(100vw - 4rem);
 }
 
+.enter {
+	display: none;
+}
+
+.confirm {
+	font-family: AntiqueLegacy, sans-serif;
+	font-size: 0.25rem;
+
+	padding: 0.1rem 0.15rem 0.15rem 0.15rem;
+
+	outline: solid 1px black;
+}
+
+.confirm:hover {
+	cursor: alias;
+}
+
 th,
 td {
 	font-weight: normal;
 }
 
 .large {
+	line-height: 1rem;
 	letter-spacing: -0.02rem;
 }
 
@@ -57,6 +90,12 @@ td {
 	font-weight: bold;
 	font-size: 0.25rem;
 	letter-spacing: 0rem;
+
+	color: black;
+}
+
+a:hover {
+	cursor: alias;
 }
 
 .missing-numbers, .concrete {
@@ -69,8 +108,21 @@ td {
 	width: 0.75rem;
 	padding: 5px 5px 4px 5px;
 
-	background-color: rgba(0, 0, 0, 1.0);
+	display: none;
+}
+
+.hovbox.bye-concrete {
+	background-color: black;
 	mix-blend-mode: multiply;
+}
+
+.hovbox.download {
+	background-color: red;
+	outline: black 1px solid;
+}
+
+.hovtext.light {
+	color: black;
 }
 
 .hovtext {
@@ -81,21 +133,22 @@ td {
 	letter-spacing: 0rem;
 
 	display: inline-block;
-	position: absolute;
-	top: 0.15rem;
-	left: 0.15rem;
+	vertical-align: middle;
+	margin-top: -0.6rem;
 
 	color: white;
 }
 
-.download {
-	display: none;
+
+
+
+audio {
+	position: fixed;
 }
 
-
-
-
-
+audio::-webkit-media-controls {
+	display: none;
+}
 
 
 
@@ -173,4 +226,7 @@ iframe {
 .hoverimg.vert {
 	height: 40rem;
 }
+
+
+
 
