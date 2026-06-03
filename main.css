@@ -51,6 +51,11 @@ table {
 	border: 0px solid white;
 }
 
+/*.warning {
+	padding-left: 30vw;
+	padding-right: 30vw;
+}*/
+
 tr {
 	vertical-align: middle;
 
@@ -72,7 +77,10 @@ tr {
 }
 
 .confirm:hover {
-	cursor: alias;
+	cursor: pointer;
+
+	background-color: black;
+	color: white;
 }
 
 th,

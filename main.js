@@ -43,13 +43,13 @@ $(document).mousemove(function(e){
 
 ///////////
 
-$('.header.more.intro.defunkt1').hover(
+$('.imgactivator.senior').hover(
 	function(){
-		$('.hoverimg.defunkt1').css({'display':'block'})
-		$('.hi-concrete').css({'display':'none'})
+		$('.bgimg.defunkt1').css({'display':'block'})
+		$('.bye-concrete').css({'display':'none'})
 	},
 	function(){
 		$('.hoverimg.defunkt1').css({'display':'none'})
-		$('.hi-concrete').css({'display':'block'})
+		$('.bye-concrete').css({'display':'block'})
 	}
 )
