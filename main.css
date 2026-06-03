@@ -1,0 +1,176 @@
+@font-face {
+	font-family: Sorny;
+	src: url("Sorny-Regular.ttf");
+}
+
+@font-face {
+	font-family: AntiqueLegacy;
+	src: url("Antique-Legacy-Medium.woff");
+}
+
+* {
+	font-family: Sorny;
+	font-size: 60px;
+	line-height: 1rem;
+	text-align: center;
+}
+
+.column {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	padding: 2rem;
+
+	overflow: scroll;
+}
+
+table {
+	position: relative;
+
+	height: auto;
+	width: 100%;
+	/*margin-bottom: 2rem;*/
+
+	border: 0px solid white;
+}
+
+tr {
+	vertical-align: middle;
+
+	height: calc(100vh - 4rem);
+	width: calc(100vw - 4rem);
+}
+
+th,
+td {
+	font-weight: normal;
+}
+
+.large {
+	letter-spacing: -0.02rem;
+}
+
+.small, a {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 0.25rem;
+	letter-spacing: 0rem;
+}
+
+.missing-numbers, .concrete {
+	font-family: AntiqueLegacy, sans-serif;
+}
+
+.hovbox {
+	position: fixed;
+	height: 0.75rem;
+	width: 0.75rem;
+	padding: 5px 5px 4px 5px;
+
+	background-color: rgba(0, 0, 0, 1.0);
+	mix-blend-mode: multiply;
+}
+
+.hovtext {
+	font-family: AntiqueLegacy, sans-serif;
+	font-weight: bold;
+	font-size: 0.15rem;
+	line-height: 0.15rem;
+	letter-spacing: 0rem;
+
+	display: inline-block;
+	position: absolute;
+	top: 0.15rem;
+	left: 0.15rem;
+
+	color: white;
+}
+
+.download {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+/*IMAGES*/
+
+img {
+	width: 100%;
+	margin: 0;
+}
+
+.bg-img-wrapper {
+	position: fixed;
+	width: calc(100vw - 9rem);
+	height: calc(100vh - 9rem);
+	top: 0;
+	left: 0;
+	margin: 4.5rem;
+
+	text-align: center;
+
+	z-index: -100;
+}
+
+.bg-img {
+	display: none;
+	height: 100%;
+	width: auto;
+	margin: auto;
+}
+
+img.reg {
+	padding: 4.5rem;
+}
+
+img.reg.vert {
+	height: calc(100vh - 9rem);
+	width: auto;
+}
+
+img.reg.hori {
+	height: auto;
+	width: calc(100% - 9rem);
+}
+
+img.reg.wide {
+	padding-bottom: 1.6rem;
+}
+
+
+iframe {
+	width: calc(100% - 9rem);
+	height: 21.3vw;
+	margin: 0rem;
+}
+
+.hoverimg {
+	display: none;
+	position: fixed;
+
+	height: 26rem;
+	width: auto;
+
+	z-index: 1;
+}
+
+.hoverimg.left {
+	transform: translate(16px,-50%);
+}
+
+.hoverimg.right {
+	transform: translate(-103%,-50%);
+}
+
+.hoverimg.vert {
+	height: 40rem;
+}
+
