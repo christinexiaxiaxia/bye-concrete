@@ -43,13 +43,71 @@ $(document).mousemove(function(e){
 
 ///////////
 
-$('.imgactivator.senior').hover(
+$('.imgactivator.you').hover(
 	function(){
-		$('.bgimg.defunkt1').css({'display':'block'})
+		$('.bg-img.you').css({'display':'block'})
 		$('.bye-concrete').css({'display':'none'})
 	},
 	function(){
-		$('.hoverimg.defunkt1').css({'display':'none'})
+		$('.bg-img.you').css({'display':'none'})
 		$('.bye-concrete').css({'display':'block'})
 	}
 )
+
+$('.imgactivator.senior').hover(
+	function(){
+		$('.bg-img.senior').css({'display':'block'})
+		$('.bye-concrete').css({'display':'none'})
+	},
+	function(){
+		$('.bg-img.senior').css({'display':'none'})
+		$('.bye-concrete').css({'display':'block'})
+	}
+)
+
+$('.imgactivator.concrete').hover(
+	function(){
+		$('.bg-img.concrete').css({'display':'block'})
+		$('.bye-concrete').css({'display':'none'})
+	},
+	function(){
+		$('.bg-img.concrete').css({'display':'none'})
+		$('.bye-concrete').css({'display':'block'})
+	}
+)
+
+$('.imgactivator.date').hover(
+	function(){
+		$('.bg-img.date').css({'display':'block'})
+		$('.bye-concrete').css({'display':'none'})
+	},
+	function(){
+		$('.bg-img.date').css({'display':'none'})
+		$('.bye-concrete').css({'display':'block'})
+	}
+)
+
+$('.imgactivator.ty').hover(
+	function(){
+		$('.bg-img.ty').css({'display':'block'})
+		$('.bye-concrete').css({'display':'none'})
+	},
+	function(){
+		$('.bg-img.ty').css({'display':'none'})
+		$('.bye-concrete').css({'display':'block'})
+	}
+)
+
+$('.imgactivator.me').hover(
+	function(){
+		$('.bg-img.me').css({'display':'block'})
+		$('.bye-concrete').css({'display':'none'})
+	},
+	function(){
+		$('.bg-img.me').css({'display':'none'})
+		$('.bye-concrete').css({'display':'block'})
+	}
+)
+
+
+
